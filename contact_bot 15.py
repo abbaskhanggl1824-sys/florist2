@@ -44,27 +44,17 @@ GOOGLE_CREDS_JSON = os.environ.get("GOOGLE_CREDS_JSON", "{}")
 genai.configure(api_key=GEMINI_API_KEY)
 gemini_model = genai.GenerativeModel("gemini-3.1-flash-lite")
 
-FIRST_NAME = "Ray"
-LAST_NAME  = ""
-FULL_NAME  = "Ray"
-COMPANY    = "Zevahit"
-EMAIL      = "sales@zevahit.com"
-PHONE      = "+18005550199"
+FIRST_NAME  = "Salman"
+LAST_NAME   = "Khan"
+FULL_NAME   = "Salman Khan"
+COMPANY     = "LocalTuneUp"
+EMAIL       = "salman@localtuneup.com"
+PHONE       = "+918889652586"
 
-SUBJECT_TEMPLATE = "Quick question regarding white-label link inventory"
 
-MESSAGE_TEMPLATE = """Hi team,
+SUBJECT_TEMPLATE = "Flower shop visibility in {city} (Quick Question)"
 
-{intro}Quick question—are you currently taking on new SEO clients that require genuine, high-traffic editorial placements rather than the usual spammed-out guest post networks?
-
-We handle direct-to-editorial outreach strictly for agencies. For instance, we secure placements on live, highly vetted platforms like The Boss Magazine (https://thebossmagazine.com) - real brands with massive organic traffic, strict editorial standards, and zero footprint.
-
-If you're looking to scale your link-building fulfillment with inventory that easily passes manual client approval, just reply to this with your primary client niche. I'll send over 3 live examples with pricing.
-
-Warm Regards,
-Ray
-Zevahit.com
-Client reviews: https://clutch.co/profile/zevahit#reviews"""
+MESSAGE_TEMPLATE = "Hi,\n\n{intro}\n\nMany customers looking for wedding decor, festival styling, or fresh flower deliveries in your area now start their search through Google Maps, AI Overviews, and ChatGPT recommendations before placing an order.\n\nWe're helping local florists strengthen their visibility across those channels through local authority signals, geo-targeted citations, and premium industry placements to ensure you capture those high-value inquiries.\n\nWould you be open to a quick conversation?\n\nWarm Regards,\n\nSalman Khan\nLocalTuneUp.com"
 
 PROCESS_LIMIT = None
 
